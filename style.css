@@ -1,0 +1,96 @@
+@import url('https://fonts.googleapis.com/css2?family=Noto+Sans:ital,wght@0,100..900;1,100..900&family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&family=Roboto:ital,wght@0,100;0,300;0,400;0,500;0,700;0,900;1,100;1,300;1,400;1,500;1,700;1,900&display=swap');
+*{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+body{
+    height: 100vh;
+    background-color: rgb(100, 14, 100);
+    display: grid;
+    place-content: center;
+    font-family: "Noto Sans", serif;
+}
+.container{
+    width: 400px;
+    height: 500px;
+    background-color: white;
+    border-radius: 10px;
+    box-shadow: 0 2px 15px rgba(0,0,0,0.3);
+    padding: 20px;
+}
+.title{
+    display: flex;
+    /* justify-content: center; */
+    align-items: center;
+    gap: 8px;
+    font-size: 18px;
+    margin-bottom: 10px;
+}
+.fas{
+    color: red;
+    font-size: 22px;
+}
+.searchContainer{
+    width: 100%;
+    /* border: 1px solid green; */
+    display: flex;
+}
+input{
+    padding: 10px 0;
+    background-color: rgb(219, 219, 212);
+    flex: 1;
+    padding-left: 5px;
+    outline-color: rgb(219, 219, 212);
+
+}
+input,button{
+    border: none;
+    border-radius: 30px;
+
+}
+button{
+    padding: 10px 30px;
+    margin-left: -40px;
+    background-color: rgb(255, 69, 0);
+    color: white;
+    font-weight: 500;
+}
+.todoList{
+    display: flex;
+    flex-direction: column;
+    gap: 15px;
+    margin-top: 15px;
+}
+.todo{
+    /* padding: 5px; */
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: antiquewhite;
+    cursor: pointer;
+    border-radius: 5px;
+}
+p{
+    padding: 5px;
+    width: 100%;
+    height: 100%;
+    /* border: 1px solid green; */
+}
+span{
+    width: 15%;
+    /* border: 1px solid green; */
+    display: grid;
+    place-content: center;
+}
+.completed{
+    text-decoration: line-through;
+}
+/* .deleteTodo{
+    display: none;
+} */
+@media(max-width:450px){
+ .container{
+    width: 100%;
+ }   
+}
